@@ -1,0 +1,86 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+a {
+    position: relative;
+    color: white;
+    background: royalblue;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: 300;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    transition: 500ms;
+}
+
+a:hover {
+    letter-spacing: 0.20em;
+    background-color: royalblue;
+    color: royalblue;
+    box-shadow: 0 0 35px royalblue;
+}
+
+a:before {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background: black;
+}
+
+a i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+a i:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background: black;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 500ms;
+}
+a:hover i:before {
+    width: 20px;
+    left: 20%;
+}
+
+a i:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 20%;
+    width: 10px;
+    height: 4px;
+    background: black;
+    transform: translateX(-50%) skewX(325deg);
+    transition: 500ms;
+}
+a:hover i:after {
+    width: 20px;
+    left: 80%;
+}
+
+
+a span {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    margin-top: 25%;
+    margin-bottom: 25%;
+    text-align: center;
+}
